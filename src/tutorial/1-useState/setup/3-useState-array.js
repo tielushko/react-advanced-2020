@@ -5,7 +5,7 @@ import { data } from "../../../data"; //importing the array of data.
 const UseStateArray = () => {
   const [people, setPeople] = React.useState(data);
 
-  //functional approach of setting people with the functional approach 
+  //functional approach of setting people with the functional approach
   const removeItem = (id) => {
     setPeople((prevPeople) => {
       return prevPeople.filter((person) => person.id !== id);
